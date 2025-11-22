@@ -5,25 +5,23 @@
 <title>Break Store PS3 HOST</title>
 
 <style>
-/* PS3 Browser SAFE CSS */
+/* PS3 Browser compatibility */
 
-/* إزالة الهوامش */
 body {
     margin: 0;
     padding: 0;
-    background-color: #000000;
     font-family: Arial, sans-serif;
-    text-align: center;
+    overflow: hidden;          /* يمنع التمرير */
 }
 
-/* الخلفية – بدون cover ولا center لأن PS3 لا يدعمها */
+/* الخلفية بالحجم الكامل 960×1080 */
 .bg {
     position: absolute;
     top: 0;
     left: 0;
-    width: 960px;      /* الحجم المناسب لشاشة PS3 */
+    width: 960px;
     height: 1080px;
-    background: url('host.jpg');
+    background-image: url('host.jpg');
     background-repeat: no-repeat;
 }
 
@@ -31,10 +29,10 @@ body {
 .titleBox {
     position: absolute;
     top: 50px;
-    left: 240px;
+    left: 80px;
     width: 800px;
     padding: 15px;
-    background-color: #000000;
+    background-color: rgba(0,0,0,0.7);
     color: #ffffff;
     font-size: 32px;
     border: 2px solid #ffffff;
@@ -44,7 +42,7 @@ body {
 .button {
     position: absolute;
     top: 350px;
-    left: 440px;
+    left: 280px;
     width: 400px;
     padding: 20px;
     background-color: #0070ff;
@@ -52,16 +50,19 @@ body {
     font-size: 26px;
     text-decoration: none;
     border: 3px solid #ffffff;
+    display: block;
+    text-align: center;
 }
 </style>
 
 </head>
 <body>
 
+<!-- خلفية تملأ شاشة PS3 بالكامل -->
 <div class="bg"></div>
 
 <div class="titleBox">
-    PS3 Mod Host -  BY Break Store
+    PS3 Mod Host - BY Break Store
 </div>
 
 <a href="HEN/492/hen492.html" class="button">
