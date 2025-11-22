@@ -5,27 +5,27 @@
 <title>Break Store PS3 HOST</title>
 
 <style>
-/* PS3 Browser compatibility */
-
+/* إعدادات الصفحة */
 body {
     margin: 0;
     padding: 0;
+    overflow: hidden;
     font-family: Arial, sans-serif;
-    overflow: hidden;          /* يمنع التمرير */
 }
 
-/* الخلفية بالحجم الكامل 960×1080 */
+/* الخلفية – تغطي الشاشة بالكامل */
 .bg {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 960px;
-    height: 1080px;
+    width: 100%;
+    height: 100%;
     background-image: url('host.jpg');
     background-repeat: no-repeat;
+    background-size: 100% 100%; /* الحل المناسب للـ PS3 */
 }
 
-/* صندوق النص */
+/* صندوق العنوان */
 .titleBox {
     position: absolute;
     top: 50px;
@@ -36,9 +36,10 @@ body {
     color: #ffffff;
     font-size: 32px;
     border: 2px solid #ffffff;
+    text-align: center;
 }
 
-/* زر التحميل */
+/* زر التثبيت */
 .button {
     position: absolute;
     top: 350px;
@@ -58,7 +59,7 @@ body {
 </head>
 <body>
 
-<!-- خلفية تملأ شاشة PS3 بالكامل -->
+<!-- الخلفية التي تغطي صفحة PS3 كاملة -->
 <div class="bg"></div>
 
 <div class="titleBox">
